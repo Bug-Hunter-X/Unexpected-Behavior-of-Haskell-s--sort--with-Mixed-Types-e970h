@@ -1,0 +1,5 @@
+# Haskell Sort Function with Mixed Types
+
+This repository demonstrates an uncommon issue related to Haskell's `sort` function when dealing with lists containing elements of mixed types.  The example code showcases how `sort` behaves with lists of numbers and strings individually, highlighting that it works as expected in these cases. However, attempting to use `sort` on a list that mixes numbers and strings results in a compile-time type error. This is due to Haskell's strong static typing system, which prevents comparison operations between incompatible types.
+
+The solution provides a strategy using type classes and custom comparison functions to handle sorting lists with mixed types, if needed. This involves defining a new typeclass and instances to handle comparison between different types, thus enabling sorting of heterogeneous lists.
